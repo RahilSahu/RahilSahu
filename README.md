@@ -1,24 +1,27 @@
 # Rahil Sahu
 
-**Penetration Tester | Application Security Engineer**
+**Penetration Tester and AppSec Engineer, building security tools, applied AI products, and systems software in the open.**
 
-I help build secure applications by identifying risks before attackers do.
-4+ years of VAPT across web, mobile (Android and iOS), API, network and
-thick-client applications, plus source-code review, secure configuration
-assessment, cloud security validation and ISO 27001 work.
+I help build secure applications by identifying risks before attackers do. By day: 4+ years of VAPT across web, mobile, API, network and thick-client applications, source-code review, cloud security validation and ISO 27001 work at TeamLease RegTech. In the open: the projects below, every one of them working software with tests, not demos.
 
 ![Profile views](https://komarev.com/ghpvc/?username=RahilSahu&color=0e75b6&style=flat)
 [![GitHub followers](https://img.shields.io/github/followers/RahilSahu?style=flat&logo=github)](https://github.com/RahilSahu?tab=followers)
 
-## About me
+## Flagship projects
 
-- Penetration Tester at TeamLease RegTech Pvt. Ltd.
-- Based in Sagar, Madhya Pradesh, India, working with teams in Indore and remotely
-- CEH Practical certified, B.Tech in Computer Science
-- Day work: OWASP Top 10 and API Security Top 10 testing, vulnerability remediation, secure SDLC, security questionnaires, third-party risk
-- I build small, readable security tools in Python. Everything below is zero-dependency and unit tested
+| Project | Domain | What it is |
+| --- | --- | --- |
+| [adaptive-llm-chatbot](https://github.com/RahilSahu/adaptive-llm-chatbot) | Applied AI / LLM engineering | **AdaptiveChat**: a document-chat product that sets its own temperature per message, with LangGraph orchestration, input and output guardrails, semantic retrieval over owner-uploaded documents (embeddings with a TF-IDF fallback), LangSmith tracing and a web UI. 48 tests, Docker packaging |
+| [distributed-task-queue](https://github.com/RahilSahu/distributed-task-queue) | Systems / distributed systems | A dependency-free distributed task queue in Python: broker with leases and heartbeats, priority queues, retries with backoff, dead-letter queue, at-least-once delivery, persistence, and a worker client. Built to show how systems like Celery and SQS work inside |
+| [cloud-misconfiguration-scanner](https://github.com/RahilSahu/cloud-misconfiguration-scanner) | Cloud security / DevSecOps | Multi-cloud misconfiguration scanner for AWS, Azure, GCP and OCI: public buckets and containers, public policies, and world-open firewall and NSG rules, with offline analysers for exported policies. 27 tests |
 
-## My security tools
+## Open source contributions
+
+- **OWASP CheatSheetSeries**: invited by maintainer @mackowski to review PR #2908 (NPM Security Cheat Sheet, "Inspecting a project you did not write"); review and approval posted, two completeness findings addressed by the author.
+- **Google osv-scanner**: contributor on issue #570 (CLI help documentation).
+- **pypa/pip-audit**: a tested fix for the `--fix` side of duplicate requirements (#564), prepared on a fork branch; the upstream repo currently restricts interaction to prior contributors, so submission waits for that to lift.
+
+## Security tools
 
 ### Assessment essentials
 
@@ -31,11 +34,6 @@ assessment, cloud security validation and ISO 27001 work.
 | [jwt-analyzer](https://github.com/RahilSahu/jwt-analyzer) | Decodes JWTs and audits them: alg none, expiry, sensitive claims, weak HMAC secrets |
 | [bulk-url-checker](https://github.com/RahilSahu/bulk-url-checker) | Checks lists of URLs for status, redirect chains and errors, writes a CSV report |
 | [cors-misconfiguration-checker](https://github.com/RahilSahu/cors-misconfiguration-checker) | Probes a URL with hostile Origin headers and classifies reflection, null-origin and lookalike trust |
-| [cloud-misconfiguration-scanner](https://github.com/RahilSahu/cloud-misconfiguration-scanner) | Multi-cloud scanner for AWS, Azure, GCP and OCI: public buckets and containers, public policies, world-open firewall rules |
-
-## Writing
-
-[appsec-field-notes](https://github.com/RahilSahu/appsec-field-notes): short, practical security posts written from assessment work, covering HTTP headers, file upload testing, JWT audits, email spoofing and filename spoofing, each with the commands to test it yourself.
 
 ### File and upload testing
 
@@ -46,12 +44,19 @@ assessment, cloud security validation and ISO 27001 work.
 | [pdf-active-content-test-generator](https://github.com/RahilSahu/pdf-active-content-test-generator) | Builds PDFs with benign active-content markers to test upload filters, AV and DLP |
 | [modern-image-upload-test-corpus](https://github.com/RahilSahu/modern-image-upload-test-corpus) | 40 harmless test files for HEIC, HEIF, AVIF, JPEG XL and WebP upload validation and parser robustness |
 
-All tools are for authorised testing, defence and learning. Test files
-use harmless markers only, never working shells or exploit payloads.
+All tools are for authorised testing, defence and learning. Test files use harmless markers only, never working shells or exploit payloads.
+
+## Writing
+
+[appsec-field-notes](https://github.com/RahilSahu/appsec-field-notes): short, practical security posts written from assessment work, covering HTTP headers, file upload testing, JWT audits, email spoofing and filename spoofing, each with the commands to test it yourself. A new post lands most weeks.
 
 ## Skills and tooling
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Burp Suite](https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat&logo=burp-suite&logoColor=white)
 ![Nmap](https://img.shields.io/badge/Nmap-163B69?style=flat)
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat)
@@ -60,9 +65,7 @@ use harmless markers only, never working shells or exploit payloads.
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
-Web and API security, mobile app security, network VAPT, OWASP Top 10,
-API Security Top 10, SAST and SCA review, cloud security (Azure),
-ISO 27001, SOC 2 evidence work, TPRM.
+Application and API security, mobile security, network VAPT, OWASP Top 10 and API Security Top 10, SAST and SCA review, LLM application engineering (RAG, agents, guardrails), cloud security across AWS, Azure, GCP and OCI, ISO 27001 and SOC 2 evidence work, TPRM.
 
 ## GitHub stats
 
@@ -74,9 +77,8 @@ ISO 27001, SOC 2 evidence work, TPRM.
 - Portfolio: https://rahilsahu.github.io
 - LinkedIn: https://www.linkedin.com/in/rahilsahu
 - Email: rahilsahu.jobs@gmail.com
+- Based in Sagar, Madhya Pradesh, India. Open to remote roles internationally, and relocation for the right role.
 
 ## Responsible use
 
-Everything published here is for authorised security testing, defence
-and learning. Only test systems you own or have explicit permission to
-test.
+Everything published here is for authorised security testing, defence and learning. Only test systems you own or have explicit permission to test.
